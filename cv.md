@@ -63,6 +63,14 @@ function multiply(a, b){
 
 ---
 
+## Projects
+
+1. [Adaptive landing page for online course](https://malinna13.github.io/landing-for-course/)
+2. [Adaptive landing page for UpBox cosmetics](https://malinna13.github.io/UpBox-landing/public/)
+3. [Landing page for marketplace](https://malinna13.github.io/marketPlace/)
+
+---
+
 ## Education
 
 2010 - **National Aviation University**, Kyiv, Ukraine
