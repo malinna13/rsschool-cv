@@ -1,3 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  padding: 0 24px;
+  font-family: "PT Sans Narrow", sans-serif;
+  line-height: 64px;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9e8c6c;
+  transition: all 0.3s;
+}
+.nav-link:hover {
+  color: #635846;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  text-decoration: underline;
+}
+
 h1 {
-  color: darkslategray;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: -2.17241px;
+  margin-bottom: 40px;
+}
+h3 {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9e8c6c;
+}
+p {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+.container #profile {
+  height: 75vh;
+  background: linear-gradient(
+    to top,
+    rgba(158, 140, 108, 0.1),
+    rgba(158, 140, 108, 0.1)
+  );
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+}
+#profile .wrapper {
+  display: flex;
+  gap: 125px;
+  padding-top: 160px;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 175px;
+}
+
+#profile a {
+  font-family: PT Sans Narrow;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #0699a6;
+  padding: 17px 60px;
 }
