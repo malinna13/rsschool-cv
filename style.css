@@ -33,13 +33,6 @@ pre {
   margin: 0 auto;
 }
 
-/* header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: #ffffff;
-} */
-
 .nav-list {
   display: flex;
   justify-content: flex-end;
@@ -125,7 +118,7 @@ hr {
   border-radius: 175px;
 }
 
-#profile a {
+.button {
   font-family: PT Sans Narrow;
   font-weight: bold;
   font-size: 18px;
@@ -135,12 +128,23 @@ hr {
   color: #ffffff;
   background: #0699a6;
   padding: 17px 60px;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background: #07b4c4;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .content {
   display: flex;
   gap: 125px;
   padding: 90px 0 0;
 }
+
+.visible {
+  display: none;
+}
+
 .main-list {
   font-size: 20px;
   line-height: 34px;
@@ -167,7 +171,7 @@ hr {
   transition: all 0.3s;
 }
 .project-link:hover {
-  color: #635846;
+  color: #07b4c4;
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   text-decoration: underline;
 }
@@ -209,6 +213,13 @@ hr {
   color: #0699a6;
 }
 
+.contacts-text a {
+  color: #0699a6;
+  transition: all 0.3s;
+}
+.contacts-text a:hover {
+  color: #07b4c4;
+}
 .rs-school {
   align-self: flex-end;
   display: flex;
@@ -218,4 +229,72 @@ hr {
 
 .rs-school-logo {
   width: 60px;
+}
+
+.social img:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1280px) {
+  #profile .wrapper {
+    gap: 125px;
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .contacts-text {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 950px) {
+  header {
+    display: none;
+  }
+  h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  #profile .wrapper {
+    gap: 50px;
+    padding-top: 80px;
+  }
+  .content {
+    gap: 50px;
+  }
+}
+@media (max-width: 768px) {
+  #profile .wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-top: 80px;
+    text-align: center;
+  }
+  .container #profile {
+    height: 750px;
+    clip-path: polygon(0 0, 100% 0, 100% 650px, 0 100%);
+  }
+  .content {
+    flex-direction: column-reverse;
+  }
+  .list-item-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .visible {
+    display: block;
+  }
+  .contacts-text {
+    text-align: center;
+      font-size: 34px;
+      line-height: 40px;
+    }
+  }
+  .container #contacts {
+    clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 100%);
+  }
 }
